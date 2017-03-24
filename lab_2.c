@@ -66,8 +66,8 @@ void get_dir_info(char *dir_name)
         if (strcmp(file_name, ".") == 0 || strcmp(file_name, "..") == 0)
             continue;
 
-		strcpy(full_path, dir_name);		
-		strcat(full_path, "/");
+	strcpy(full_path, dir_name);		
+	strcat(full_path, "/");
         strcat(full_path, file_name);
 
         if (lstat(full_path, &file_info) == -1)
